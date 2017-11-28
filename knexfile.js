@@ -8,6 +8,12 @@ module.exports = {
 			database: PGDATABASE,
 			user: PGUSER,
 			password: PGPASSWORD
+		},
+		migrations: {
+			directory: "./db/migrations"
+		},
+		seeds: {
+			directory: "./db/seeds"
 		}
 	}
 };

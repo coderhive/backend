@@ -2,14 +2,14 @@ exports.up = function(knex, Promise) {
 	return knex.schema.createTable("Component", table => {
 		table.increments();
 		table.integer("parent_component_id").references("id").inTable("Component");
-		table.text("code").notNullable();
-		table.text("test").notNullable();
+		table.text("code");
+		table.text("test");
 		table.varchar("framework").notNullable();
 		table.varchar("title");
 		table.varchar("privacy");
 		table.varchar("status").notNullable().defaultTo("active");
 		table.text("description");
-		table.integer("clone_component_id").referenecs("id").inTable("Component").notNullable();
+		table.integer("clone_component_id").references("id").inTable("Component");
 		table.varchar("language").notNullable();
 		table.integer("user_id").references("id").inTable("User").notNullable();
 		table.timestamps(true, true);
