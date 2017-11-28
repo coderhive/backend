@@ -9,7 +9,6 @@ const db = require('./knex');
 import typeDefs from './schema'
 import resolvers from './resolvers'
 
-
 const app = express();
 const schema = makeExecutableSchema({
     typeDefs,
