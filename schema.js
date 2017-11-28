@@ -1,6 +1,14 @@
 export default `
+  type User {
+    id: Int!
+    email: String!
+    created_at: String!
+    updated_at: String!
+  }
+
+
   type Query {
-    hello: String!
+    allUsers: [User!]!
   }  
    
 `;
