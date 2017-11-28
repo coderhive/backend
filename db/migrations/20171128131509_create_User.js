@@ -2,6 +2,7 @@ exports.up = function(knex, Promise) {
 	return knex.schema.createTable("User", table => {
 		table.increments();
 		table.varchar("email").notNullable().unique();
+		table.varchar("hashed_password").notNullable();
 		table.varchar("display_name").notNullable();
 		table.varchar("status").notNullable().defaultTo("active");
 		table.varchar("experience").notNullable().defaultTo("0");
