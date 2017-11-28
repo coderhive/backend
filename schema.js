@@ -5,10 +5,19 @@ export default `
     created_at: String!
     updated_at: String!
   }
-
-
+  
   type Query {
     allUsers: [User!]!
-  }  
-   
+  }
+    
 `;
+
+
+
+
+
+  // type Component {
+  //   id
+  //   name
+  //   code
+  // }
