@@ -1,7 +1,7 @@
 exports.up = function(knex, Promise) {
 	return knex.schema.createTable("Component", table => {
 		table.increments();
-		table.integer("parent_component_id").references("id").inTable("Component").notNullable();
+		table.integer("parent_component_id").references("id").inTable("Component");
 		table.text("code").notNullable();
 		table.text("test").notNullable();
 		table.varchar("framework").notNullable();

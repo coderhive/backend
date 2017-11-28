@@ -1,0 +1,40 @@
+exports.seed = function(knex, Promise) {
+	// Deletes ALL existing entries
+	return knex("Component").del().then(function() {
+		// Inserts seed entries
+		return knex("Component").insert([
+			{
+				id: 1,
+				code: "<MyFirstComponent/>",
+				test: null,
+				language: "JavaScript",
+				user_id: 1,
+				framework: "React",
+				title: "First!",
+				description: "idk"
+			},
+			{
+				id: 2,
+				code: "<MyFirstComponentChild/>",
+				test: null,
+				language: "JavaScript",
+				user_id: 2,
+				framework: "React",
+				title: "Second!",
+				description: "idk?",
+				parent_component_id: 1
+			},
+			{
+				id: 3,
+				code: "<MyFirstComponentAngular/>",
+				test: null,
+				language: "JavaScript",
+				user_id: 3,
+				framework: "Angular",
+				title: "First!",
+				description: "idk",
+				clone_component_id: 1
+			}
+		]);
+	});
+};
