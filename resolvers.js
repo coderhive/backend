@@ -3,9 +3,12 @@ const userResolver = require('./lib/instances/userResolver');
 export default {
     Query: {
         allUsers: userResolver.getAll,
-        oneUser: userResolver.getByEmail
-
+        oneUser: userResolver.getByIdentifier
     },
+    Mutation: {
+        createUser: userResolver.createNew
+
+    }
     // User: {
     //     components: componentResolver.getComponentForUser
     // }
