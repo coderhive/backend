@@ -49,17 +49,8 @@ app.all('/token', (req, res, next) => {
     res.status(405).send('Method Not Allowed')
 });
 
+app.use("/graphiql", graphiqlExpress({endpointURL: "/graphql"}));
 
-
-app.use(
-	"/graphiql",
-	graphiqlExpress({
-		endpointURL: "/graphql",
-		db
-	})
-);
-
-// app.use("/graphql", graphqlExpress({ schema, context: { storageHere } }));
 app.use("/graphql", graphqlExpress(request => ({
     schema,
     context: { authenticatedUserId: request.authenticatedUserId }

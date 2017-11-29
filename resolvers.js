@@ -7,7 +7,6 @@ export default {
     },
     Mutation: {
         createUser: userResolver.createNew
-
     }
     // User: {
     //     components: componentResolver.getComponentForUser
