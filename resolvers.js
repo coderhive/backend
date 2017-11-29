@@ -2,7 +2,9 @@ const userResolver = require('./lib/instances/userResolver');
 
 export default {
     Query: {
-        allUsers: userResolver.getAll
+        allUsers: userResolver.getAll,
+        oneUser: userResolver.getByEmail
+
     },
     // User: {
     //     components: componentResolver.getComponentForUser

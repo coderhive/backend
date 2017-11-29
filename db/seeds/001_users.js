@@ -7,19 +7,19 @@ exports.seed = function(knex, Promise) {
 				id: 1,
 				email: "chuckhagy@gmail.com",
 				display_name: "chuck",
-				hashed_password: "$2a$12$C9AYYmcLVGYlGoO4vSZTPud9ArJwbGRsJ6TUsNULzR48z8fOnTXbS"
+				hashed_password: "$2a$10$HbWgc.KjkddVG0eAW0DRdubASzK7i9Y72R1WTuYjuiBFfpTPAoPb6"
 			},
 			{
 				id: 2,
 				email: "melisaim@gmail.com",
 				display_name: "melisa",
-				hashed_password: "$2a$12$C9AYYmcLVGYlGoO4vSZTPud9ArJwbGRsJ6TUsNULzR48z8fOnTXbS"
+				hashed_password: "$2a$10$HbWgc.KjkddVG0eAW0DRdubASzK7i9Y72R1WTuYjuiBFfpTPAoPb6"
 			},
 			{
 				id: 3,
 				email: "jasonhsu@gmail.com",
 				display_name: "jason",
-				hashed_password: "$2a$12$C9AYYmcLVGYlGoO4vSZTPud9ArJwbGRsJ6TUsNULzR48z8fOnTXbS"
+				hashed_password: "$2a$10$HbWgc.KjkddVG0eAW0DRdubASzK7i9Y72R1WTuYjuiBFfpTPAoPb6"
 			}
 		]);
 	});
