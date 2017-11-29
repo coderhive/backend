@@ -4,7 +4,6 @@ exports.seed = function(knex, Promise) {
 		// Inserts seed entries
 		return knex("Component").insert([
 			{
-				id: 1,
 				code: "<MyFirstComponent/>",
 				test: null,
 				language: "JavaScript",
@@ -14,7 +13,6 @@ exports.seed = function(knex, Promise) {
 				description: "idk"
 			},
 			{
-				id: 2,
 				code: "<MyFirstComponentChild/>",
 				test: null,
 				language: "JavaScript",
@@ -25,7 +23,6 @@ exports.seed = function(knex, Promise) {
 				parent_component_id: 1
 			},
 			{
-				id: 3,
 				code: "<MyFirstComponentAngular/>",
 				test: null,
 				language: "JavaScript",

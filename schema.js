@@ -4,6 +4,7 @@ export default `
     email: String!
     display_name: String!
     status: String!
+    role: String!
     experience: Int!
     profile_picture: String
     created_at: String!

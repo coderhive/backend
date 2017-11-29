@@ -7,7 +7,6 @@ const { JWT_KEY } = require('./env');
 const jwt = require('express-jwt');
 const authenticationController = require('./lib/instances/authenticationController');
 const PORT = 3000;
-const db = require("./knex");
 
 import typeDefs from "./schema";
 import resolvers from "./resolvers";

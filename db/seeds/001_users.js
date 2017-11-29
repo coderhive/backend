@@ -4,14 +4,12 @@ exports.seed = function(knex, Promise) {
 		// Inserts seed entries
 		return knex("User").insert([
 			{
-				id: 1,
 				email: "chuckhagy@gmail.com",
 				display_name: "chuck",
 				hashed_password: "$2a$10$HbWgc.KjkddVG0eAW0DRdubASzK7i9Y72R1WTuYjuiBFfpTPAoPb6",
 				role: "admin"
 			},
 			{
-				id: 2,
 				email: "melisaim@gmail.com",
 				display_name: "melisa",
 				hashed_password: "$2a$10$HbWgc.KjkddVG0eAW0DRdubASzK7i9Y72R1WTuYjuiBFfpTPAoPb6",
@@ -19,7 +17,6 @@ exports.seed = function(knex, Promise) {
 
             },
 			{
-				id: 3,
 				email: "jasonhsu@gmail.com",
 				display_name: "jason",
 				hashed_password: "$2a$10$HbWgc.KjkddVG0eAW0DRdubASzK7i9Y72R1WTuYjuiBFfpTPAoPb6"
