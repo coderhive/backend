@@ -5,7 +5,7 @@ export default `
     display_name: String!
     status: String!
     experience: Int!
-    profile_picture: String!
+    profile_picture: String
     created_at: String!
     updated_at: String!
   }

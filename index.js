@@ -11,7 +11,6 @@ const db = require("./knex");
 
 import typeDefs from "./schema";
 import resolvers from "./resolvers";
-
 const app = express();
 const schema = makeExecutableSchema({
 	typeDefs,
@@ -31,6 +30,7 @@ app.use(
     })
 );
 
+
 app.use((req, res, next) => {
     let authUserId = req.jwt ? req.jwt.payload.sub : undefined;
     if(typeof authUserId === 'number' && authUserId > 0) {
@@ -43,6 +43,8 @@ app.use((req, res, next) => {
 
 
 app.post('/token', authenticationController.token);
+
+
 app.all('/token', (req, res, next) => {
     res.status(405).send('Method Not Allowed')
 });
@@ -57,7 +59,11 @@ app.use(
 	})
 );
 
-app.use("/graphql", graphqlExpress({ schema, context: { db } }));
+// app.use("/graphql", graphqlExpress({ schema, context: { storageHere } }));
+app.use("/graphql", graphqlExpress(request => ({
+    schema,
+    context: { authenticatedUserId: request.authenticatedUserId }
+})));
 
 app.listen(PORT);
 console.log("Listening on port ", PORT);

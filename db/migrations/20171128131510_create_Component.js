@@ -3,6 +3,7 @@ exports.up = function(knex, Promise) {
 		table.increments();
 		table.integer("parent_component_id").references("id").inTable("Component");
 		table.text("code");
+		table.text("css");
 		table.text("test");
 		table.varchar("framework").notNullable();
 		table.varchar("title");
