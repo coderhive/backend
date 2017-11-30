@@ -52,5 +52,6 @@ export default `
         experience: Int
         profile_picture: String
     ): User
+    deleteUser(id: Int!): User
   }  
 `;

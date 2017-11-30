@@ -8,7 +8,8 @@ export default {
     },
     Mutation: {
         createUser: userResolver.createNew,
-        updateUser: userResolver.update
+        updateUser: userResolver.update,
+        deleteUser: userResolver.delete
     },
     User: {
         components: componentResolver.getByIdentifier
