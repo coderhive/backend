@@ -1,4 +1,5 @@
 const userResolver = require('./lib/instances/userResolver');
+const componentResolver = require('./lib/instances/componentResolver');
 
 export default {
     Query: {
@@ -7,39 +8,8 @@ export default {
     },
     Mutation: {
         createUser: userResolver.createNew
-
+    },
+    User: {
+        components: componentResolver.getByIdentifier
     }
-    // User: {
-    //     components: componentResolver.getComponentForUser
-    // }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-    data: {
-        allUsers: [
-            {
-                id
-                name
-                components: [
-                 {
-                 }
-                ]
-            }
-        ]
-    }
- */

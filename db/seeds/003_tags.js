@@ -3,9 +3,9 @@ exports.seed = function(knex, Promise) {
 	return knex("Tag").del().then(function() {
 		// Inserts seed entries
 		return knex("Tag").insert([
-			{ id: 1, name: "React" },
-			{ id: 2, name: "Angular" },
-			{ id: 3, name: "Form" }
+			{ name: "React" },
+			{ name: "Angular" },
+			{ name: "Form" }
 		]);
 	});
 };

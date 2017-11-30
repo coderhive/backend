@@ -7,7 +7,6 @@ const { JWT_KEY } = require('./env');
 const jwt = require('express-jwt');
 const authenticationController = require('./lib/instances/authenticationController');
 const PORT = 3000;
-const db = require("./knex");
 
 import typeDefs from "./schema";
 import resolvers from "./resolvers";
@@ -49,17 +48,8 @@ app.all('/token', (req, res, next) => {
     res.status(405).send('Method Not Allowed')
 });
 
+app.use("/graphiql", graphiqlExpress({endpointURL: "/graphql"}));
 
-
-app.use(
-	"/graphiql",
-	graphiqlExpress({
-		endpointURL: "/graphql",
-		db
-	})
-);
-
-// app.use("/graphql", graphqlExpress({ schema, context: { storageHere } }));
 app.use("/graphql", graphqlExpress(request => ({
     schema,
     context: { authenticatedUserId: request.authenticatedUserId }
