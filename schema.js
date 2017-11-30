@@ -42,5 +42,15 @@ export default `
         password: String!
         display_name: String!
     ): User
+    updateUser(
+        id: Int!
+        email: String
+        password: String
+        display_name: String
+        status: String
+        role: String
+        experience: Int
+        profile_picture: String
+    ): User
   }  
 `;
