@@ -42,6 +42,8 @@ export default `
     user_id: Int!
     display_name: String!
     component_id: Int!
+    title: String!
+    description: String
     vote: Int!
     created_at: String!
     updated_at: String!
