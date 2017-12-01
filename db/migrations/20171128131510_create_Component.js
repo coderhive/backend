@@ -13,6 +13,7 @@ exports.up = function(knex, Promise) {
 		table.integer("clone_component_id").references("id").inTable("Component");
 		table.varchar("language").notNullable();
 		table.integer("user_id").references("id").inTable("User").notNullable();
+		table.text("component_picture");
 		table.timestamps(true, true);
 	});
 };

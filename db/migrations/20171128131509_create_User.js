@@ -15,3 +15,10 @@ exports.up = function(knex, Promise) {
 exports.down = function(knex, Promise) {
 	return knex.schema.raw("DROP TABLE \"User\" CASCADE");
 };
+
+
+// votes (and join)
+// components-comments (and join)
+
+// users-follow (and join)
+// components-follow (and join)
