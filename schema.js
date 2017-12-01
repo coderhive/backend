@@ -13,6 +13,8 @@ export default `
     votes: [Vote]!
     comments: [Comment]!
     fanOf: [Fan]!
+    followers: [User]!
+    whoIFollow: [User]!
   }
   
    type Component {
@@ -31,11 +33,18 @@ export default `
     status: String!
     created_at: String!
     updated_at: String!
+    tags: [Tag]!
     votes: [Vote]!
     comments: [Comment]!
     fans: [Fan]!
-
-  }  
+  }
+  
+  type Tag {
+    id: Int!
+    name: String!
+    created_at: String!
+    updated_at: String!
+  }
   
    type Vote {
     id: Int!
@@ -67,7 +76,7 @@ export default `
     display_name: String!
     component_id: Int!
     title: String!
-        description: String
+    description: String
     created_at: String!
     updated_at: String!
   }
