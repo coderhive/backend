@@ -31,11 +31,18 @@ export default `
     status: String!
     created_at: String!
     updated_at: String!
+    tags: [Tag]!
     votes: [Vote]!
     comments: [Comment]!
     fans: [Fan]!
-
-  }  
+  }
+  
+  type Tag {
+    id: Int!
+    name: String!
+    created_at: String!
+    updated_at: String!
+  }
   
    type Vote {
     id: Int!

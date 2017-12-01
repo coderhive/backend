@@ -3,6 +3,7 @@ const componentResolver = require('./lib/instances/componentResolver');
 const voteResolver = require('./lib/instances/voteResolver');
 const commentResolver = require('./lib/instances/commentResolver');
 const fanResolver = require('./lib/instances/fanResolver');
+const tagResolver = require('./lib/instances/tagResolver');
 
 export default {
     Query: {
@@ -16,14 +17,15 @@ export default {
     },
     User: {
         components: componentResolver.getByIdentifier,
-        votes: voteResolver.getByUserIdSpecial,
+        votes: voteResolver.getByUserId,
         comments: commentResolver.getByUserId,
         fanOf: fanResolver.getByUserId,
     },
     Component: {
-        votes: voteResolver.getByIdentifierSpecial,
+        votes: voteResolver.getByIdentifier,
         comments: commentResolver.getByIdentifier,
         fans: fanResolver.getByIdentifier,
+        tags: tagResolver.getTagsByComponent,
 
     }
 };
