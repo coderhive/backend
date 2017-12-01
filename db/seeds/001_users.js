@@ -13,9 +13,8 @@ exports.seed = function(knex, Promise) {
 				email: "melisaim@gmail.com",
 				display_name: "melisa",
 				hashed_password: "$2a$10$HbWgc.KjkddVG0eAW0DRdubASzK7i9Y72R1WTuYjuiBFfpTPAoPb6",
-                role: "admin"
-
-            },
+				role: "admin"
+			},
 			{
 				email: "jasonhsu@gmail.com",
 				display_name: "jason",
