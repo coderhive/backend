@@ -10,8 +10,9 @@ export default `
     created_at: String!
     updated_at: String!
     components: [Component]
-    votes: [Vote]
-
+    votes: [Vote]!
+    comments: [Comment]!
+    fanOf: [Fan]!
   }
   
    type Component {
@@ -30,14 +31,35 @@ export default `
     status: String!
     created_at: String!
     updated_at: String!
-    votes: [Vote]
+    votes: [Vote]!
+    comments: [Comment]!
+    fans: [Fan]!
+
   }  
   
    type Vote {
     id: Int!
     user_id: Int!
+    display_name: String!
     component_id: Int!
     vote: Int!
+    created_at: String!
+    updated_at: String!
+  }
+  
+   type Comment {
+    id: Int!
+    user_id: Int!
+    component_id: Int!
+    comment: String!
+    created_at: String!
+    updated_at: String!
+  }  
+  
+   type Fan {
+    id: Int!
+    user_id: Int!
+    component_id: Int!
     created_at: String!
     updated_at: String!
   }
