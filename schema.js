@@ -13,6 +13,8 @@ export default `
     votes: [Vote]!
     comments: [Comment]!
     fanOf: [Fan]!
+    followers: [User]!
+    whoIFollow: [User]!
   }
   
    type Component {
@@ -74,7 +76,7 @@ export default `
     display_name: String!
     component_id: Int!
     title: String!
-        description: String
+    description: String
     created_at: String!
     updated_at: String!
   }

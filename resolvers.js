@@ -4,6 +4,7 @@ const voteResolver = require('./lib/instances/voteResolver');
 const commentResolver = require('./lib/instances/commentResolver');
 const fanResolver = require('./lib/instances/fanResolver');
 const tagResolver = require('./lib/instances/tagResolver');
+const followResolver = require('./lib/instances/followResolver');
 
 export default {
     Query: {
@@ -20,6 +21,8 @@ export default {
         votes: voteResolver.getByUserId,
         comments: commentResolver.getByUserId,
         fanOf: fanResolver.getByUserId,
+        followers: followResolver.getFollowers,
+        whoIFollow: followResolver.getFollowees
     },
     Component: {
         votes: voteResolver.getByIdentifier,
