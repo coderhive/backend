@@ -10,6 +10,8 @@ export default {
     Query: {
         allUsers: userResolver.getAll,
         oneUser: userResolver.getByIdentifier,
+        oneComponent: componentResolver.getById,
+
     },
     Mutation: {
         createUser: userResolver.createNew,
@@ -22,14 +24,14 @@ export default {
         comments: commentResolver.getByUserId,
         fanOf: fanResolver.getByUserId,
         followers: followResolver.getFollowers,
-        whoIFollow: followResolver.getFollowees
+        whoIFollow: followResolver.getFollowees,
     },
     Component: {
         votes: voteResolver.getByIdentifier,
         comments: commentResolver.getByIdentifier,
         fans: fanResolver.getByIdentifier,
         tags: tagResolver.getTagsByComponent,
-
+        myParent: componentResolver.getParent,
     }
 };
 

@@ -37,6 +37,7 @@ export default `
     votes: [Vote]!
     comments: [Comment]!
     fans: [Fan]!
+    myParent: Component
   }
   
   type Tag {
@@ -84,7 +85,7 @@ export default `
   type Query {
     allUsers: [User!]!
     oneUser(email: String!): User
-    
+    oneComponent(id: Int!): Component
   }
   
   type Mutation {
