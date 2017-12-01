@@ -1,5 +1,6 @@
 const userResolver = require('./lib/instances/userResolver');
 const componentResolver = require('./lib/instances/componentResolver');
+const voteResolver = require('./lib/instances/voteResolver');
 
 export default {
     Query: {
@@ -12,6 +13,7 @@ export default {
         deleteUser: userResolver.delete
     },
     User: {
-        components: componentResolver.getByIdentifier
+        components: componentResolver.getByIdentifier,
+        votes: voteResolver.getByIdentifier
     }
 };

@@ -10,6 +10,7 @@ export default `
     created_at: String!
     updated_at: String!
     components: [Component]
+    votes: [Vote]
   }
   
    type Component {
@@ -26,6 +27,14 @@ export default `
     description: String
     privacy: String
     status: String!
+    created_at: String!
+    updated_at: String!
+  }  
+  
+   type Vote {
+    id: Int!
+    component_id: Int!
+    vote: Int!
     created_at: String!
     updated_at: String!
   }
