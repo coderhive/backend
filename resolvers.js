@@ -14,6 +14,9 @@ export default {
     },
     User: {
         components: componentResolver.getByIdentifier,
+        votes: voteResolver.getByUserId
+    },
+    Component: {
         votes: voteResolver.getByIdentifier
     }
 };

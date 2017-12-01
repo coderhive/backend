@@ -11,6 +11,7 @@ export default `
     updated_at: String!
     components: [Component]
     votes: [Vote]
+
   }
   
    type Component {
@@ -29,10 +30,12 @@ export default `
     status: String!
     created_at: String!
     updated_at: String!
+    votes: [Vote]
   }  
   
    type Vote {
     id: Int!
+    user_id: Int!
     component_id: Int!
     vote: Int!
     created_at: String!
