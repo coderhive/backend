@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import { graphiqlExpress, graphqlExpress } from "apollo-server-express";
 import { makeExecutableSchema } from "graphql-tools";
-
+const cors = require("cors");
 const { JWT_KEY } = require("./env");
 const jwt = require("express-jwt");
 const authenticationController = require("./lib/instances/authenticationController");
@@ -16,6 +16,7 @@ const schema = makeExecutableSchema({
 	resolvers
 });
 
+app.use(cors());
 app.use(bodyParser.json());
 
 app.use(
