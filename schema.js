@@ -52,7 +52,10 @@ export default `
    type Comment {
     id: Int!
     user_id: Int!
+    display_name: String!
     component_id: Int!
+    title: String!
+    description: String
     comment: String!
     created_at: String!
     updated_at: String!
@@ -61,7 +64,10 @@ export default `
    type Fan {
     id: Int!
     user_id: Int!
+    display_name: String!
     component_id: Int!
+    title: String!
+        description: String
     created_at: String!
     updated_at: String!
   }
