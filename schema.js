@@ -21,7 +21,6 @@ export default `
     id: Int!
     parent_component_id: Int
     clone_component_id: Int
-    user_id: Int!
     code: String
     css: String
     test: String
@@ -37,7 +36,10 @@ export default `
     votes: [Vote]!
     comments: [Comment]!
     fans: [Fan]!
+    owner_user_id: Int!
+    owner: User!
     myParent: Component
+    myChildren: [Component]!
   }
   
   type Tag {

@@ -22,13 +22,34 @@ exports.seed = function(knex, Promise) {
 				title: "Second!",
 				description: "idk?",
 			},
+            {
+                code: "<MyFirstComponentAngular/>",
+                test: null,
+                language: "JavaScript",
+                owner_user_id: 3,
+                framework: "Angular",
+                title: "Third!",
+                description: "idk",
+                parent_component_id: 1
+
+            },{
+				code: "<MyFirstComponentChild/>",
+				test: null,
+				language: "JavaScript",
+				owner_user_id: 2,
+				framework: "React",
+				title: "Fourth!",
+				description: "idk?",
+                parent_component_id: 1
+
+            },
 			{
 				code: "<MyFirstComponentAngular/>",
 				test: null,
 				language: "JavaScript",
 				owner_user_id: 3,
 				framework: "Angular",
-				title: "Third!",
+				title: "Fifth!",
 				description: "idk",
                 parent_component_id: 1
 

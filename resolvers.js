@@ -32,6 +32,8 @@ export default {
         fans: fanResolver.getByIdentifier,
         tags: tagResolver.getTagsByComponent,
         myParent: componentResolver.getParent,
+        myChildren: componentResolver.getChildren,
+        owner: userResolver.getOwnerByParentComponentId,
     }
 };
 
