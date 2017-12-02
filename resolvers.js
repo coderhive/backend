@@ -31,9 +31,11 @@ export default {
         comments: commentResolver.getByIdentifier,
         fans: fanResolver.getByIdentifier,
         tags: tagResolver.getTagsByComponent,
+        owner: userResolver.getOwnerByParentComponentId,
         myParent: componentResolver.getParent,
         myChildren: componentResolver.getChildren,
-        owner: userResolver.getOwnerByParentComponentId,
+        myCloneSource: componentResolver.getCloneSource,
+        myClones: componentResolver.getClones,
     }
 };
 

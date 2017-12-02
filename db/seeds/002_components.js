@@ -30,7 +30,7 @@ exports.seed = function(knex, Promise) {
                 framework: "Angular",
                 title: "Third!",
                 description: "idk",
-                parent_component_id: 1
+                clone_component_id: 1
 
             },{
 				code: "<MyFirstComponentChild/>",

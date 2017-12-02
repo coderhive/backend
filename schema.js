@@ -40,6 +40,8 @@ export default `
     owner: User!
     myParent: Component
     myChildren: [Component]!
+    myCloneSource: Component
+    myClones: [Component]!
   }
   
   type Tag {
