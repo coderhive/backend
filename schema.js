@@ -21,7 +21,6 @@ export default `
     id: Int!
     parent_component_id: Int
     clone_component_id: Int
-    user_id: Int!
     code: String
     css: String
     test: String
@@ -37,6 +36,12 @@ export default `
     votes: [Vote]!
     comments: [Comment]!
     fans: [Fan]!
+    owner_user_id: Int!
+    owner: User!
+    myParent: Component
+    myChildren: [Component]!
+    myCloneSource: Component
+    myClones: [Component]!
   }
   
   type Tag {
@@ -84,7 +89,7 @@ export default `
   type Query {
     allUsers: [User!]!
     oneUser(email: String!): User
-    
+    oneComponent(id: Int!): Component
   }
   
   type Mutation {

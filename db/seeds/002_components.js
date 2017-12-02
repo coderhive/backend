@@ -10,7 +10,8 @@ exports.seed = function(knex, Promise) {
 				owner_user_id: 1,
 				framework: "React",
 				title: "First!",
-				description: "idk"
+				description: "idk",
+				clone_component_id: 2
 			},
 			{
 				code: "<MyFirstComponentChild/>",
@@ -20,18 +21,39 @@ exports.seed = function(knex, Promise) {
 				framework: "React",
 				title: "Second!",
 				description: "idk?",
-				parent_component_id: 1
 			},
+            {
+                code: "<MyFirstComponentAngular/>",
+                test: null,
+                language: "JavaScript",
+                owner_user_id: 3,
+                framework: "Angular",
+                title: "Third!",
+                description: "idk",
+                clone_component_id: 1
+
+            },{
+				code: "<MyFirstComponentChild/>",
+				test: null,
+				language: "JavaScript",
+				owner_user_id: 2,
+				framework: "React",
+				title: "Fourth!",
+				description: "idk?",
+                parent_component_id: 1
+
+            },
 			{
 				code: "<MyFirstComponentAngular/>",
 				test: null,
 				language: "JavaScript",
 				owner_user_id: 3,
 				framework: "Angular",
-				title: "First!",
+				title: "Fifth!",
 				description: "idk",
-				clone_component_id: 1
-			}
+                parent_component_id: 1
+
+            }
 		]);
 	});
 };
