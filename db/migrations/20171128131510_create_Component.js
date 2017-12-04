@@ -14,6 +14,7 @@ exports.up = function(knex, Promise) {
 		table.varchar("language").notNullable();
 		table.integer("owner_user_id").references("id").inTable("User").notNullable();
 		table.text("component_picture");
+		table.integer("score").notNullable().defaultTo(0);
 		table.timestamps(true, true);
 	});
 };

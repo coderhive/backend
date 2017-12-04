@@ -11,7 +11,7 @@ export default {
         allUsers: userResolver.getAll,
         oneUser: userResolver.getByIdentifier,
         oneComponent: componentResolver.getById,
-
+        allComponents: componentResolver.getAll
     },
     Mutation: {
         createUser: userResolver.createNew,

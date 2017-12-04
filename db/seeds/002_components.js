@@ -11,7 +11,8 @@ exports.seed = function(knex, Promise) {
 				framework: "React",
 				title: "First!",
 				description: "idk",
-				clone_component_id: 2
+				clone_component_id: 2,
+				score: 2
 			},
 			{
 				code: "<MyFirstComponentChild/>",
@@ -21,6 +22,7 @@ exports.seed = function(knex, Promise) {
 				framework: "React",
 				title: "Second!",
 				description: "idk?",
+				score: -1
 			},
             {
                 code: "<MyFirstComponentAngular/>",
