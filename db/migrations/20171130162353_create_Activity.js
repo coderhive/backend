@@ -4,10 +4,8 @@ exports.up = function(knex, Promise) {
 		table.varchar("type").notNullable();
 		table.integer("user_id").references("id").inTable("User");
 		table.integer("component_id").references("id").inTable("Component");
-		table.integer("fan_id").references("id").inTable("Fan");
-		table.integer("follow_id").references("id").inTable("Follow");
 		table.integer("comment_id").references("id").inTable("Comment");
-		table.integer("vote_id").references("id").inTable("Vote");
+		table.integer("owner_id").references("id").inTable("User").notNullable();
 		table.timestamps(true, true);
 	});
 };

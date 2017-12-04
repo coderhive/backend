@@ -5,13 +5,15 @@ const commentResolver = require('./lib/instances/commentResolver');
 const fanResolver = require('./lib/instances/fanResolver');
 const tagResolver = require('./lib/instances/tagResolver');
 const followResolver = require('./lib/instances/followResolver');
+const activityResolver = require('./lib/instances/activityResolver');
 
 export default {
     Query: {
         allUsers: userResolver.getAll,
         oneUser: userResolver.getByIdentifier,
         oneComponent: componentResolver.getById,
-        allComponents: componentResolver.getAll
+        allComponents: componentResolver.getAll,
+        activities: activityResolver.getActivity,
     },
     Mutation: {
         createUser: userResolver.createNew,
@@ -36,6 +38,11 @@ export default {
         myChildren: componentResolver.getChildren,
         myCloneSource: componentResolver.getCloneSource,
         myClones: componentResolver.getClones,
+    },
+    Activity: {
+        component: activityResolver.getByIdentifier,
+        user: activityResolver.getByUserId,
+        comment: activityResolver.getComment
     }
 };
 
