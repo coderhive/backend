@@ -42,6 +42,7 @@ export default `
     myChildren: [Component]!
     myCloneSource: Component
     myClones: [Component]!
+    score: Int!
   }
   
   type Tag {
@@ -88,8 +89,9 @@ export default `
   
   
   type Query {
-    allUsers: [User!]!
+    allUsers: [User]!
     oneUser(email: String!): User
+    allComponents: [Component]!
     oneComponent(id: Int!): Component
   }
   
