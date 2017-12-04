@@ -2,7 +2,7 @@ export default `
   type User {
     id: Int!
     email: String!
-    display_name: String!
+    display_name: String
     status: String!
     role: String!
     experience: Int!
@@ -84,7 +84,8 @@ export default `
     description: String
     created_at: String!
     updated_at: String!
-  }
+  }  
+  
   
   type Query {
     allUsers: [User!]!
