@@ -86,6 +86,19 @@ export default `
     created_at: String!
     updated_at: String!
   }  
+    
+   type Activity {
+    id: Int
+    type: String!
+    component_id: Int
+    user_id: Int
+    component: Component
+    user: User
+    comment_id: Int
+    comment: Comment
+    created_at: String
+    updated_at: String
+  }  
   
   
   type Query {
@@ -93,6 +106,7 @@ export default `
     oneUser(email: String!): User
     allComponents: [Component]!
     oneComponent(id: Int!): Component
+    activities(userId: Int!): [Activity]!
   }
   
   type Mutation {
