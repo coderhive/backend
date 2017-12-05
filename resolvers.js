@@ -66,5 +66,3 @@ export default {
         comment: activityResolver.getComment
     }
 };
-
-// Do joins to get Display_Name along with FAN, COMMENT, FOLLOW
