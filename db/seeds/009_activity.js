@@ -237,13 +237,23 @@ exports.seed = function(knex, Promise) {
 			{ type: "newComment", component_id: 16, user_id: 4, owner_id: 4, comment_id: 44},
 			{ type: "newComment", component_id: 16, user_id: 4, owner_id: 5, comment_id: 44},
 
+			{ type: "newComment", component_id: 17, user_id: 1, owner_id: 4, comment_id: 45},
+			{ type: "newComment", component_id: 18, user_id: 1, owner_id: 1, comment_id: 46},
+			{ type: "newComment", component_id: 19, user_id: 2, owner_id: 3, comment_id: 47},
+			{ type: "newComment", component_id: 20, user_id: 2, owner_id: 1, comment_id: 48},
+			{ type: "newComment", component_id: 20, user_id: 2, owner_id: 2, comment_id: 48},
+			{ type: "newComment", component_id: 20, user_id: 2, owner_id: 3, comment_id: 48},
+			{ type: "newComment", component_id: 20, user_id: 2, owner_id: 4, comment_id: 48},
+			{ type: "newComment", component_id: 20, user_id: 2, owner_id: 5, comment_id: 48},
 
-
-
-
-
-
-
+			{ type: "newComment", component_id: 17, user_id: 3, owner_id: 4, comment_id: 49},
+			{ type: "newComment", component_id: 18, user_id: 3, owner_id: 1, comment_id: 50},
+			{ type: "newComment", component_id: 19, user_id: 4, owner_id: 3, comment_id: 51},
+			{ type: "newComment", component_id: 20, user_id: 5, owner_id: 1, comment_id: 52},
+			{ type: "newComment", component_id: 20, user_id: 5, owner_id: 2, comment_id: 52},
+			{ type: "newComment", component_id: 20, user_id: 5, owner_id: 3, comment_id: 52},
+			{ type: "newComment", component_id: 20, user_id: 5, owner_id: 4, comment_id: 52},
+			{ type: "newComment", component_id: 20, user_id: 5, owner_id: 5, comment_id: 52},
 
 		]);
 	});
