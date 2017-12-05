@@ -97,8 +97,17 @@ export default `
     updated_at: String!
   }  
     
+   type Follow {
+    id: Int!
+    follower: Int!
+    followe2: Int!
+    created_at: String!
+    updated_at: String!
+  }  
+    
    type Activity {
     id: Int
+    owner_id: Int
     type: String!
     component_id: Int
     user_id: Int
@@ -106,8 +115,8 @@ export default `
     user: User
     comment_id: Int
     comment: Comment
-    created_at: String
-    updated_at: String
+    created_at: String!
+    updated_at: String!
   }  
   
   
@@ -139,6 +148,45 @@ export default `
     ): User
   
     deleteUser(id: Int!): User
+    
+    
+    createComponent(
+        parent_component_id: Int
+        clone_component_id: Int
+        code: String
+        css: String
+        test: String
+        language: String!
+        framework: String!
+        title: String!
+        description: String
+        privacy: String
+        owner_user_id: Int!
+        component_picture: String
+    ): Component
+    
+    updateComponent(
+        id: Int!
+        parent_component_id: Int
+        clone_component_id: Int
+        code: String
+        css: String
+        test: String
+        language: String
+        framework: String
+        title: String
+        description: String
+        privacy: String
+        owner_user_id: Int
+        component_picture: String
+    ): Component
+     
+    deleteComponent(
+        id: Int!
+    ): Component
+    
+    
+    
   
     createFan(
         user_id: Int!
@@ -169,6 +217,16 @@ export default `
         component_id: Int!
         tag_id: Int!
     ): TagRelationship
-  
+            
+    createFollow(
+        follower: Int!
+        followee: Int!
+    ): Follow
+      
+    deleteFollow(
+        follower: Int!
+        followee: Int!
+    ): Follow
+            
   }  
 `;

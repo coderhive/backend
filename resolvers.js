@@ -21,6 +21,10 @@ export default {
         updateUser: userResolver.update,
         deleteUser: userResolver.delete,
 
+        createComponent: componentResolver.createNew,
+        updateComponent: componentResolver.update,
+        deleteComponent: componentResolver.delete,
+
         createFan: fanResolver.createNew,
         deleteFan: fanResolver.delete,
 
@@ -29,6 +33,9 @@ export default {
 
         createTagRelationship: componentTagResolver.createNew,
         deleteTagRelationship: componentTagResolver.delete,
+
+        createFollow: followResolver.createNew,
+        deleteFollow: followResolver.delete,
     },
     User: {
         components: componentResolver.getByIdentifier,
