@@ -189,7 +189,7 @@ exports.seed = function (knex, Promise) {
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
                 component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
                 owner_user_id: 1,
-                score: 2
+                score: 0
             },
             {
                 status: "active",
@@ -206,7 +206,7 @@ exports.seed = function (knex, Promise) {
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
                 component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
                 owner_user_id: 1,
-                score: 1
+                score: 0
             },
             {
                 status: "active",
