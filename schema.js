@@ -2,7 +2,8 @@ export default `
   type User {
     id: Int!
     email: String!
-    display_name: String
+    display_name: String!
+    summary: String
     status: String!
     role: String!
     experience: Int!

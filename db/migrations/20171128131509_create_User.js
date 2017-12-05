@@ -4,6 +4,7 @@ exports.up = function(knex, Promise) {
 		table.varchar("email").notNullable().unique();
 		table.varchar("hashed_password").notNullable();
 		table.varchar("display_name").notNullable();
+		table.varchar("summary");
 		table.varchar("status").notNullable().defaultTo("active");
 		table.varchar("role").notNullable().defaultTo("user");
 		table.varchar("experience").notNullable().defaultTo("0");
