@@ -53,6 +53,14 @@ export default `
     created_at: String!
     updated_at: String!
   }
+    
+  type TagRelationship {
+    id: Int!
+    user_id: Int!
+    component_id: Int!
+    created_at: String!
+    updated_at: String!
+  }
   
    type Vote {
     id: Int!
@@ -89,8 +97,17 @@ export default `
     updated_at: String!
   }  
     
+   type Follow {
+    id: Int!
+    follower: Int!
+    followe2: Int!
+    created_at: String!
+    updated_at: String!
+  }  
+    
    type Activity {
     id: Int
+    owner_id: Int
     type: String!
     component_id: Int
     user_id: Int
@@ -98,8 +115,8 @@ export default `
     user: User
     comment_id: Int
     comment: Comment
-    created_at: String
-    updated_at: String
+    created_at: String!
+    updated_at: String!
   }  
   
   
@@ -131,6 +148,44 @@ export default `
     ): User
   
     deleteUser(id: Int!): User
+    
+    
+    createComponent(
+        parent_component_id: Int
+        clone_component_id: Int
+        code: String
+        css: String
+        test: String
+        language: String!
+        framework: String!
+        title: String!
+        description: String
+        privacy: String
+        owner_user_id: Int!
+        component_picture: String
+    ): Component
+    
+    updateComponent(
+        id: Int!
+        parent_component_id: Int
+        clone_component_id: Int
+        code: String
+        css: String
+        test: String
+        language: String
+        framework: String
+        title: String
+        description: String
+        privacy: String
+        owner_user_id: Int
+        component_picture: String
+    ): Component
+     
+    deleteComponent(
+        id: Int!
+    ): Component
+    
+    
   
     createFan(
         user_id: Int!
@@ -145,11 +200,47 @@ export default `
         user_id: Int!
         component_id: Int!
         vote: Int!
-    ): Fan
+    ): Vote
       
     deleteVote(
+        user_id: Int!
+        component_id: Int!
+    ): Vote
+        
+    createTagRelationship(
+        tag_id: Int!
+        component_id: Int!
+    ): TagRelationship
+      
+    deleteTagRelationship(
+        component_id: Int!
+        tag_id: Int!
+    ): TagRelationship
+            
+    createFollow(
+        follower: Int!
+        followee: Int!
+    ): Follow
+      
+    deleteFollow(
+        follower: Int!
+        followee: Int!
+    ): Follow
+    
+    createComment(
+        user_id: Int!
+        component_id: Int!
+        comment: String!
+    ): Comment
+    
+    updateComment(
         id: Int!
-    ): Fan
-  
+        comment: String!
+    ): Comment
+      
+    deleteComment(
+        id: Int!
+    ): Comment
+            
   }  
 `;
