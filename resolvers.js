@@ -36,6 +36,10 @@ export default {
 
         createFollow: followResolver.createNew,
         deleteFollow: followResolver.delete,
+
+        createComment: commentResolver.createNew,
+        updateComment: commentResolver.update,
+        deleteComment: commentResolver.delete,
     },
     User: {
         components: componentResolver.getByIdentifier,

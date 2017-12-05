@@ -186,7 +186,6 @@ export default `
     ): Component
     
     
-    
   
     createFan(
         user_id: Int!
@@ -227,6 +226,21 @@ export default `
         follower: Int!
         followee: Int!
     ): Follow
+    
+    createComment(
+        user_id: Int!
+        component_id: Int!
+        comment: String!
+    ): Comment
+    
+    updateComment(
+        id: Int!
+        comment: String!
+    ): Comment
+      
+    deleteComment(
+        id: Int!
+    ): Comment
             
   }  
 `;
