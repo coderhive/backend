@@ -106,6 +106,7 @@ export default `
   type Query {
     allUsers: [User]!
     oneUser(email: String!): User
+    loggedUser(id: Int!): User
     allComponents: [Component]!
     oneComponent(id: Int!): Component
     activities(userId: Int!): [Activity]!
@@ -117,6 +118,7 @@ export default `
         password: String!
         display_name: String!
     ): User
+  
     updateUser(
         id: Int!
         email: String
@@ -127,6 +129,27 @@ export default `
         experience: Int
         profile_picture: String
     ): User
+  
     deleteUser(id: Int!): User
+  
+    createFan(
+        user_id: Int!
+        component_id: Int!
+    ): Fan
+      
+    deleteFan(
+        id: Int!
+    ): Fan
+    
+    createVote(
+        user_id: Int!
+        component_id: Int!
+        vote: Int!
+    ): Fan
+      
+    deleteVote(
+        id: Int!
+    ): Fan
+  
   }  
 `;

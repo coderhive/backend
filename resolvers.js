@@ -9,6 +9,7 @@ const activityResolver = require('./lib/instances/activityResolver');
 
 export default {
     Query: {
+        loggedUser: userResolver.getById,
         allUsers: userResolver.getAll,
         oneUser: userResolver.getByIdentifier,
         oneComponent: componentResolver.getById,
@@ -19,6 +20,12 @@ export default {
         createUser: userResolver.createNew,
         updateUser: userResolver.update,
         deleteUser: userResolver.delete,
+
+        createFan: fanResolver.createNew,
+        deleteFan: fanResolver.delete,
+
+        createVote: voteResolver.createNew,
+        deleteVote: voteResolver.delete,
     },
     User: {
         components: componentResolver.getByIdentifier,
