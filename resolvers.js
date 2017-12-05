@@ -3,7 +3,7 @@ const componentResolver = require('./lib/instances/componentResolver');
 const voteResolver = require('./lib/instances/voteResolver');
 const commentResolver = require('./lib/instances/commentResolver');
 const fanResolver = require('./lib/instances/fanResolver');
-const tagResolver = require('./lib/instances/tagResolver');
+const componentTagResolver = require('./lib/instances/componentTagResolver');
 const followResolver = require('./lib/instances/followResolver');
 const activityResolver = require('./lib/instances/activityResolver');
 
@@ -39,7 +39,7 @@ export default {
         votes: voteResolver.getByIdentifier,
         comments: commentResolver.getByIdentifier,
         fans: fanResolver.getByIdentifier,
-        tags: tagResolver.getTagsByComponent,
+        tags: componentTagResolver.getTagsByComponent,
         owner: userResolver.getOwnerByParentComponentId,
         myParent: componentResolver.getParent,
         myChildren: componentResolver.getChildren,
