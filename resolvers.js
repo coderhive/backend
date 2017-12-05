@@ -26,6 +26,9 @@ export default {
 
         createVote: voteResolver.createNew,
         deleteVote: voteResolver.delete,
+
+        createTagRelationship: componentTagResolver.createNew,
+        deleteTagRelationship: componentTagResolver.delete,
     },
     User: {
         components: componentResolver.getByIdentifier,

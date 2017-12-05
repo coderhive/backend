@@ -53,6 +53,14 @@ export default `
     created_at: String!
     updated_at: String!
   }
+    
+  type TagRelationship {
+    id: Int!
+    user_id: Int!
+    component_id: Int!
+    created_at: String!
+    updated_at: String!
+  }
   
    type Vote {
     id: Int!
@@ -151,6 +159,16 @@ export default `
         user_id: Int!
         component_id: Int!
     ): Vote
+        
+    createTagRelationship(
+        tag_id: Int!
+        component_id: Int!
+    ): TagRelationship
+      
+    deleteTagRelationship(
+        component_id: Int!
+        tag_id: Int!
+    ): TagRelationship
   
   }  
 `;
