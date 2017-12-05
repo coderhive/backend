@@ -43,7 +43,7 @@ exports.seed = function(knex, Promise) {
 			{ user_id: 2, component_id: 11, vote: -1 },
 			{ user_id: 2, component_id: 12, vote: 1 },
 			{ user_id: 3, component_id: 9, vote: -1 },
-			{ user_id: 3, component_id: 10 vote: -1 },
+			{ user_id: 3, component_id: 10, vote: -1 },
 			{ user_id: 3, component_id: 11, vote: 1 },
 			{ user_id: 3, component_id: 12, vote: 1 },
 			{ user_id: 4, component_id: 9, vote: 1 },

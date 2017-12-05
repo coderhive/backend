@@ -44,6 +44,7 @@ export default `
     myCloneSource: Component
     myClones: [Component]!
     score: Int!
+    component_picture: String
   }
   
   type Tag {
