@@ -145,11 +145,12 @@ export default `
         user_id: Int!
         component_id: Int!
         vote: Int!
-    ): Fan
+    ): Vote
       
     deleteVote(
-        id: Int!
-    ): Fan
+        user_id: Int!
+        component_id: Int!
+    ): Vote
   
   }  
 `;
