@@ -16,7 +16,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #1 Here",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://react-etc.net/files/2016-11/web-components.png',
                 owner_user_id: 1,
                 score: 2
             },
@@ -33,7 +33,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #2 Here",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://react-etc.net/files/2017-01/typescript-polymer.png',
                 owner_user_id: 1,
                 score: 1
             },
@@ -51,7 +51,7 @@ exports.seed = function (knex, Promise) {
                 title: "Component #3 Here!",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum," +
                 " faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://react-etc.net/files/2016-11/web-components.png',
                 owner_user_id: 2,
                 score: 0
             },
@@ -68,7 +68,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #4 Here!",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://react-etc.net/files/2017-01/typescript-polymer.png',
                 owner_user_id: 2,
                 score: 0
             },
@@ -85,7 +85,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #5 Here",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://react-etc.net/files/2016-11/web-components.png',
                 owner_user_id: 3,
                 score: 0
             },
@@ -102,7 +102,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #6 Here",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://react-etc.net/files/2017-01/typescript-polymer.png',
                 owner_user_id: 3,
                 score: 0
             },
@@ -120,7 +120,7 @@ exports.seed = function (knex, Promise) {
                 title: "Component #7 Here!",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum," +
                 " faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://i0.wp.com/alibassam.com/wp-content/uploads/2015/08/css-pie-4.png',
                 owner_user_id: 4,
                 score: 0
             },            {
@@ -136,7 +136,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #8 Here!",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://image.slidesharecdn.com/creating-a-component-library-1205022030581340-4/95/creating-a-component-library-33-728.jpg?cb=1451589347',
                 owner_user_id: 4,
                 score: 0
             },
@@ -153,7 +153,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #9 Here",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://i0.wp.com/alibassam.com/wp-content/uploads/2015/08/css-pie-4.png',
                 owner_user_id: 5,
                 score: 0
             },
@@ -170,7 +170,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #10 Here",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://image.slidesharecdn.com/creating-a-component-library-1205022030581340-4/95/creating-a-component-library-33-728.jpg?cb=1451589347',
                 owner_user_id: 5,
                 score: 0
             },
@@ -204,7 +204,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #12 Here",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://d33wubrfki0l68.cloudfront.net/a6329fb5cfaefae59414a941966307c481e5987d/6a9a2/images/drop-caps/b.svg',
                 owner_user_id: 1,
                 score: 0
             },
@@ -222,7 +222,7 @@ exports.seed = function (knex, Promise) {
                 title: "Component #13 Here!",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum," +
                 " faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://avatars2.githubusercontent.com/u/6311119?v=4&s=64',
                 owner_user_id: 2,
                 score: 0
             },
@@ -239,7 +239,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #14 Here!",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://d33wubrfki0l68.cloudfront.net/a6329fb5cfaefae59414a941966307c481e5987d/6a9a2/images/drop-caps/b.svg',
                 owner_user_id: 2,
                 score: 0
             },
@@ -256,7 +256,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #15 Here",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://avatars2.githubusercontent.com/u/6311119?v=4&s=64',
                 owner_user_id: 3,
                 score: 0
             },
@@ -273,7 +273,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #16 Here",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://d33wubrfki0l68.cloudfront.net/a6329fb5cfaefae59414a941966307c481e5987d/6a9a2/images/drop-caps/b.svg',
                 owner_user_id: 3,
                 score: 0
             },
@@ -307,7 +307,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #18 Here!",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'https://avatars2.githubusercontent.com/u/6311119?v=4&s=64',
                 owner_user_id: 4,
                 score: 0
             },
@@ -341,7 +341,7 @@ exports.seed = function (knex, Promise) {
                 privacy: 'public',
                 title: "Component #20 Here",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-                component_picture: 'http://www.our-happy-cat.com/images/scared-cat-hiding.jpg',
+                component_picture: 'http://brandmark.io/logo-rank/random/pepsi.png',
                 owner_user_id: 5,
                 score: 0
             },
