@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --exec babel-node ./index.js",
     "knex": "knex",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
