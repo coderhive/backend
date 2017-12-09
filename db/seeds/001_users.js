@@ -5,7 +5,7 @@ exports.seed = function(knex, Promise) {
 		return knex("User").insert([
 			{
 				email: "chuck@gmail.com",
-				display_name: "chuck",
+				display_name: "chuck hagy",
 				hashed_password: "$2a$10$HbWgc.KjkddVG0eAW0DRdubASzK7i9Y72R1WTuYjuiBFfpTPAoPb6",
 				role: "admin",
 				experience: 4,
@@ -14,7 +14,7 @@ exports.seed = function(knex, Promise) {
 			},
 			{
 				email: "melisa@gmail.com",
-				display_name: "melisa",
+				display_name: "melisa im",
 				hashed_password: "$2a$10$HbWgc.KjkddVG0eAW0DRdubASzK7i9Y72R1WTuYjuiBFfpTPAoPb6",
 				role: "admin",
                 experience: 3,
