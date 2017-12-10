@@ -77,6 +77,7 @@ export default `
    type Comment {
     id: Int!
     user_id: Int!
+    profile_picture: String!
     display_name: String!
     component_id: Int!
     title: String!
