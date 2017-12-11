@@ -16,6 +16,7 @@ export default `
     fanOf: [Fan]!
     followers: [User]!
     whoIFollow: [User]!
+    activities: [Activity]!
   }
   
    type Component {
@@ -92,6 +93,7 @@ export default `
     user_id: Int!
     display_name: String!
     component_id: Int!
+    component_picture: String
     title: String!
     description: String
     created_at: String!
@@ -124,6 +126,7 @@ export default `
   type Query {
     allUsers: [User]!
     oneUser(email: String!): User
+    oneUserById(id: Int!): User
     loggedUser(id: Int!): User
     allComponents: [Component]!
     oneComponent(id: Int!): Component
