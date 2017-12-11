@@ -3,7 +3,7 @@ exports.seed = function (knex, Promise) {
         return knex("Comment").insert([
 
             {user_id: 1, component_id: 1, comment: "I love this component! Heck, I made it!"},
-            {user_id: 1, component_id: 2, comment: "Just okay in my opinion. Sorry!"},
+            {user_id: 1, component_id: 3, comment: "Just okay in my opinion. Sorry!"},
             {user_id: 2, component_id: 1, comment: "Nice work, but you're the worst!"},
             {user_id: 2, component_id: 2, comment: "Nope, you just don't get it!"},
             {user_id: 3, component_id: 1, comment: "Nothing special"},
@@ -63,7 +63,7 @@ exports.seed = function (knex, Promise) {
             {user_id: 3, component_id: 17, comment: "Very nice work"},
             {user_id: 3, component_id: 18, comment: "I like your styling work"},
             {user_id: 4, component_id: 19, comment: "FAIL!!!!!!!!!!!!!!!!!!!!!"},
-            {user_id: 5, component_id: 20, comment: "Much respect. Like this concept"},
+            {user_id: 1, component_id: 20, comment: "Much respect. Like this concept"},
         ]);
     });
 };
