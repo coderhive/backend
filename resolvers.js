@@ -15,6 +15,7 @@ export default {
         oneUserById: userResolver.getById,
         oneComponent: componentResolver.getById,
         allComponents: componentResolver.getAll,
+        activities: activityResolver.getActivity,
     },
     Mutation: {
         createUser: userResolver.createNew,
@@ -48,7 +49,6 @@ export default {
         fanOf: fanResolver.getByUserId,
         followers: followResolver.getFollowers,
         whoIFollow: followResolver.getFollowees,
-        activities: activityResolver.getActivity
     },
     Component: {
         votes: voteResolver.getByIdentifier,
