@@ -40,7 +40,7 @@ app.use((req, res, next) => {
 	next();
 });
 
-app.get("/component", renderController.generateHTML);
+app.get("/component/:id", renderController.generateHTML);
 
 app.post("/token", authenticationController.token);
 
