@@ -188,8 +188,6 @@ export default `
     deleteComponent(
         id: Int!
     ): Component
-    
-    
   
     createFan(
         user_id: Int!
