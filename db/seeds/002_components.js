@@ -24,7 +24,7 @@ exports.seed = function(knex, Promise) {
 				title: "Great form for login built with react",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture: "https://react-etc.net/files/2016-11/web-components.png",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_1.jpeg",
 				owner_user_id: 1,
 				score: 2
 			},
@@ -49,7 +49,7 @@ exports.seed = function(knex, Promise) {
 				title: "My little button",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture: "https://react-etc.net/files/2017-01/typescript-polymer.png",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_2.jpeg",
 				owner_user_id: 1,
 				score: 1
 			},
@@ -75,7 +75,7 @@ exports.seed = function(knex, Promise) {
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum," +
 					" faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture: "https://react-etc.net/files/2016-11/web-components.png",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_3.jpeg",
 				owner_user_id: 2,
 				score: 0
 			},
@@ -100,7 +100,7 @@ exports.seed = function(knex, Promise) {
 				title: "Navbar (blue)",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture: "https://react-etc.net/files/2017-01/typescript-polymer.png",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_4.jpeg",
 				owner_user_id: 2,
 				score: 0
 			},
@@ -125,7 +125,7 @@ exports.seed = function(knex, Promise) {
 				title: "Login Form React",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture: "https://react-etc.net/files/2016-11/web-components.png",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_5.jpeg",
 				owner_user_id: 3,
 				score: 0
 			},
@@ -150,7 +150,7 @@ exports.seed = function(knex, Promise) {
 				title: "Coolest Table",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture: "https://react-etc.net/files/2017-01/typescript-polymer.png",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_6.jpeg",
 				owner_user_id: 3,
 				score: 0
 			},
@@ -176,8 +176,7 @@ exports.seed = function(knex, Promise) {
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum," +
 					" faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture:
-					"https://i0.wp.com/alibassam.com/wp-content/uploads/2015/08/css-pie-4.png",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_7.jpeg",
 				owner_user_id: 4,
 				score: 0
 			},
@@ -202,8 +201,7 @@ exports.seed = function(knex, Promise) {
 				title: "My first Component",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture:
-					"https://image.slidesharecdn.com/creating-a-component-library-1205022030581340-4/95/creating-a-component-library-33-728.jpg?cb=1451589347",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_8.jpeg",
 				owner_user_id: 4,
 				score: 0
 			},
@@ -228,8 +226,8 @@ exports.seed = function(knex, Promise) {
 				title: "React form",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture:
-					"https://i0.wp.com/alibassam.com/wp-content/uploads/2015/08/css-pie-4.png",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_9.jpeg",
+
 				owner_user_id: 5,
 				score: 0
 			},
@@ -254,8 +252,8 @@ exports.seed = function(knex, Promise) {
 				title: "Template for blog",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture:
-					"https://image.slidesharecdn.com/creating-a-component-library-1205022030581340-4/95/creating-a-component-library-33-728.jpg?cb=1451589347",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_10.jpeg",
+
 				owner_user_id: 5,
 				score: 0
 			},
@@ -280,7 +278,7 @@ exports.seed = function(knex, Promise) {
 				title: "Text entry form",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture: "http://www.our-happy-cat.com/images/scared-cat-hiding.jpg",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_11.jpeg",
 				owner_user_id: 1,
 				score: 0
 			},
@@ -305,8 +303,8 @@ exports.seed = function(knex, Promise) {
 				title: "Article Component",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture:
-					"https://d33wubrfki0l68.cloudfront.net/a6329fb5cfaefae59414a941966307c481e5987d/6a9a2/images/drop-caps/b.svg",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_12.jpeg",
+
 				owner_user_id: 1,
 				score: 0
 			},
@@ -332,7 +330,7 @@ exports.seed = function(knex, Promise) {
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum," +
 					" faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture: "https://avatars2.githubusercontent.com/u/6311119?v=4&s=64",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_13.jpeg",
 				owner_user_id: 2,
 				score: 0
 			},
@@ -357,8 +355,8 @@ exports.seed = function(knex, Promise) {
 				title: "Favorite Styled Button",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture:
-					"https://d33wubrfki0l68.cloudfront.net/a6329fb5cfaefae59414a941966307c481e5987d/6a9a2/images/drop-caps/b.svg",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_14.jpeg",
+
 				owner_user_id: 2,
 				score: 0
 			},
@@ -383,7 +381,7 @@ exports.seed = function(knex, Promise) {
 				title: "Blue Layout",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture: "https://avatars2.githubusercontent.com/u/6311119?v=4&s=64",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_15.jpeg",
 				owner_user_id: 3,
 				score: 0
 			},
@@ -408,8 +406,8 @@ exports.seed = function(knex, Promise) {
 				title: "My NavBar",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture:
-					"https://d33wubrfki0l68.cloudfront.net/a6329fb5cfaefae59414a941966307c481e5987d/6a9a2/images/drop-caps/b.svg",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_16.jpeg",
+
 				owner_user_id: 3,
 				score: 0
 			},
@@ -435,7 +433,7 @@ exports.seed = function(knex, Promise) {
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum," +
 					" faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture: "http://www.our-happy-cat.com/images/scared-cat-hiding.jpg",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_17.jpeg",
 				owner_user_id: 4,
 				score: 0
 			},
@@ -460,7 +458,7 @@ exports.seed = function(knex, Promise) {
 				title: "Mobile Responsive Navigation",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture: "https://avatars2.githubusercontent.com/u/6311119?v=4&s=64",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_18.jpeg",
 				owner_user_id: 4,
 				score: 0
 			},
@@ -485,7 +483,7 @@ exports.seed = function(knex, Promise) {
 				title: "Music Maker Layout",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture: "http://www.our-happy-cat.com/images/scared-cat-hiding.jpg",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_19.jpeg",
 				owner_user_id: 5,
 				score: 0
 			},
@@ -510,7 +508,7 @@ exports.seed = function(knex, Promise) {
 				title: "TODO List Layout",
 				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
-				component_picture: "http://brandmark.io/logo-rank/random/pepsi.png",
+				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_20.jpeg",
 				owner_user_id: 5,
 				score: 0
 			}
