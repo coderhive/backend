@@ -146,6 +146,7 @@ export default `
         password: String
         display_name: String
         status: String
+        summary: String
         role: String
         experience: Int
         profile_picture: String
