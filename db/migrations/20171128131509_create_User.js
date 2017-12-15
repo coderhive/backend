@@ -7,7 +7,7 @@ exports.up = function(knex, Promise) {
 		table.varchar("summary");
 		table.varchar("status").notNullable().defaultTo("active");
 		table.varchar("role").notNullable().defaultTo("user");
-		table.varchar("experience").notNullable().defaultTo("0");
+		table.integer("experience").notNullable().defaultTo(0);
 		table.varchar("profile_picture");
 		table.timestamps(true, true);
 	});

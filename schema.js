@@ -11,7 +11,6 @@ export default `
     created_at: String!
     updated_at: String!
     components: [Component]
-    votes: [Vote]!
     comments: [Comment]!
     fanOf: [Fan]!
     followers: [User]!

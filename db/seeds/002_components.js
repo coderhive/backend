@@ -51,7 +51,7 @@ exports.seed = function(knex, Promise) {
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_2.jpeg",
 				owner_user_id: 1,
-				score: 1
+				score: 0
 			},
 			{
 				status: "active",
@@ -102,7 +102,7 @@ exports.seed = function(knex, Promise) {
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_4.jpeg",
 				owner_user_id: 2,
-				score: 0
+				score: 4
 			},
 			{
 				status: "active",
@@ -127,7 +127,7 @@ exports.seed = function(knex, Promise) {
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_5.jpeg",
 				owner_user_id: 3,
-				score: 0
+				score: 2
 			},
 			{
 				status: "active",
@@ -152,7 +152,7 @@ exports.seed = function(knex, Promise) {
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_6.jpeg",
 				owner_user_id: 3,
-				score: 0
+				score: 2
 			},
 			{
 				status: "active",
@@ -178,7 +178,7 @@ exports.seed = function(knex, Promise) {
 					" faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_7.jpeg",
 				owner_user_id: 4,
-				score: 0
+				score: 3
 			},
 			{
 				status: "active",
@@ -203,7 +203,7 @@ exports.seed = function(knex, Promise) {
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_8.jpeg",
 				owner_user_id: 4,
-				score: 0
+				score: 4
 			},
 			{
 				status: "active",
@@ -229,7 +229,7 @@ exports.seed = function(knex, Promise) {
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_9.jpeg",
 
 				owner_user_id: 5,
-				score: 0
+				score: 2
 			},
 			{
 				status: "active",
@@ -306,7 +306,7 @@ exports.seed = function(knex, Promise) {
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_12.jpeg",
 
 				owner_user_id: 1,
-				score: 0
+				score: 4
 			},
 			{
 				status: "active",
@@ -332,7 +332,7 @@ exports.seed = function(knex, Promise) {
 					" faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_13.jpeg",
 				owner_user_id: 2,
-				score: 0
+				score: 2
 			},
 			{
 				status: "active",
@@ -358,7 +358,7 @@ exports.seed = function(knex, Promise) {
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_14.jpeg",
 
 				owner_user_id: 2,
-				score: 0
+				score: 2
 			},
 			{
 				status: "active",
@@ -383,7 +383,7 @@ exports.seed = function(knex, Promise) {
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_15.jpeg",
 				owner_user_id: 3,
-				score: 0
+				score: 2
 			},
 			{
 				status: "active",
@@ -460,7 +460,7 @@ exports.seed = function(knex, Promise) {
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_18.jpeg",
 				owner_user_id: 4,
-				score: 0
+				score: 3
 			},
 			{
 				status: "active",
@@ -485,7 +485,7 @@ exports.seed = function(knex, Promise) {
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_19.jpeg",
 				owner_user_id: 5,
-				score: 0
+				score: 1
 			},
 			{
 				status: "active",
@@ -510,7 +510,7 @@ exports.seed = function(knex, Promise) {
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nulla fermentum, faucibus turpis eu, sagittis purus. Fusce ultrices venenatis fringilla. Mauris sodales aliquam enim in fringilla.",
 				component_picture: "https://s3-us-west-1.amazonaws.com/coderhive/component_20.jpeg",
 				owner_user_id: 5,
-				score: 0
+				score: 1
 			}
 		]);
 	});
