@@ -44,7 +44,6 @@ export default {
     },
     User: {
         components: componentResolver.getByIdentifier,
-        votes: voteResolver.getByUserId,
         comments: commentResolver.getByUserId,
         fanOf: fanResolver.getByUserId,
         followers: followResolver.getFollowers,
