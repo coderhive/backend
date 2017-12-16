@@ -40,13 +40,13 @@
     "mock-knex": "^0.4.0",
     "moment": "^2.19.3",
     "pg": "^7.4.0",
-    "webshot": "^0.18.0"
+    "webshot": "^0.18.0",
+    "graphql": "^0.11.7",
   },
   "devDependencies": {
     "esformatter-jsx": "^8.0.1",
     "eslint": "^4.12.0",
     "eslint-plugin-react": "^7.5.1",
-    "graphql": "^0.11.7",
     "nodemon": "^1.12.1"
   }
 }
