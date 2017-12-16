@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node",
+    "start": "babel-node index.js",
     "start:dev": "nodemon --exec babel-node ./index.js",
     "knex": "knex",
     "test": "jest --coverage"
@@ -21,6 +21,8 @@
   "homepage": "https://github.com/chuckhagy/backend#readme",
   "dependencies": {
     "aws-sdk": "^2.169.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
@@ -41,8 +43,6 @@
     "webshot": "^0.18.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-latest": "^6.24.1",
     "esformatter-jsx": "^8.0.1",
     "eslint": "^4.12.0",
     "eslint-plugin-react": "^7.5.1",
