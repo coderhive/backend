@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js",
-    "start:dev": "nodemon --exec babel-node ./index.js",
+    "start": "nodemon --exec babel-node ./index.js",
+    "start:dev": "babel-node index.js",
     "knex": "knex",
     "test": "jest --coverage"
   },
