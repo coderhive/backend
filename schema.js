@@ -1,4 +1,4 @@
-export default `
+module.exports = `
   type User {
     id: Int!
     email: String!
@@ -17,7 +17,7 @@ export default `
     whoIFollow: [User]!
     activities: [Activity]!
   }
-  
+
    type Component {
     id: Int!
     parent_component_id: Int
@@ -46,14 +46,14 @@ export default `
     score: Int!
     component_picture: String
   }
-  
+
   type Tag {
     id: Int!
     name: String!
     created_at: String!
     updated_at: String!
   }
-    
+
   type TagRelationship {
     id: Int!
     user_id: Int!
@@ -61,7 +61,7 @@ export default `
     created_at: String!
     updated_at: String!
   }
-  
+
    type Vote {
     id: Int!
     user_id: Int!
@@ -73,7 +73,7 @@ export default `
     created_at: String!
     updated_at: String!
   }
-  
+
    type Comment {
     id: Int!
     user_id: Int!
@@ -85,8 +85,8 @@ export default `
     comment: String!
     created_at: String!
     updated_at: String!
-  }  
-  
+  }
+
    type Fan {
     id: Int!
     user_id: Int!
@@ -97,16 +97,16 @@ export default `
     description: String
     created_at: String!
     updated_at: String!
-  }  
-    
+  }
+
    type Follow {
     id: Int!
     follower: Int!
     followe2: Int!
     created_at: String!
     updated_at: String!
-  }  
-    
+  }
+
    type Activity {
     id: Int
     owner_id: Int
@@ -119,9 +119,9 @@ export default `
     comment: Comment
     created_at: String!
     updated_at: String!
-  }  
-  
-  
+  }
+
+
   type Query {
     allUsers: [User]!
     oneUser(email: String!): User
@@ -131,14 +131,14 @@ export default `
     oneComponent(id: Int!): Component
     activities(userId: Int!): [Activity]!
   }
-  
+
   type Mutation {
     createUser(
         email: String!
         password: String!
         display_name: String!
     ): User
-  
+
     updateUser(
         id: Int!
         email: String
@@ -150,10 +150,10 @@ export default `
         experience: Int
         profile_picture: String
     ): User
-  
+
     deleteUser(id: Int!): User
-    
-    
+
+
     createComponent(
         parent_component_id: Int
         clone_component_id: Int
@@ -168,7 +168,7 @@ export default `
         owner_user_id: Int!
         component_picture: String
     ): Component
-    
+
     updateComponent(
         id: Int!
         parent_component_id: Int
@@ -184,65 +184,65 @@ export default `
         owner_user_id: Int
         component_picture: String
     ): Component
-     
+
     deleteComponent(
         id: Int!
     ): Component
-  
+
     createFan(
         user_id: Int!
         component_id: Int!
     ): Fan
-      
+
     deleteFan(
         id: Int!
     ): Fan
-    
+
     createVote(
         user_id: Int!
         component_id: Int!
         vote: Int!
     ): Vote
-      
+
     deleteVote(
         user_id: Int!
         component_id: Int!
     ): Vote
-        
+
     createTagRelationship(
         tag_id: Int!
         component_id: Int!
     ): TagRelationship
-      
+
     deleteTagRelationship(
         component_id: Int!
         tag_id: Int!
     ): TagRelationship
-            
+
     createFollow(
         follower: Int!
         followee: Int!
     ): Follow
-      
+
     deleteFollow(
         follower: Int!
         followee: Int!
     ): Follow
-    
+
     createComment(
         user_id: Int!
         component_id: Int!
         comment: String!
     ): Comment
-    
+
     updateComment(
         id: Int!
         comment: String!
     ): Comment
-      
+
     deleteComment(
         id: Int!
     ): Comment
-            
-  }  
+
+  }
 `;

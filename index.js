@@ -1,16 +1,16 @@
-import express from "express";
-import bodyParser from "body-parser";
-import { graphiqlExpress, graphqlExpress } from "apollo-server-express";
-import { makeExecutableSchema } from "graphql-tools";
+const express = require("express");
+const bodyParser = require("body-parser");
+const { graphiqlExpress, graphqlExpress } = require("apollo-server-express");
+const { makeExecutableSchema } = require("graphql-tools");
 const cors = require("cors");
 const { JWT_KEY } = require("./env");
 const jwt = require("express-jwt");
 const authenticationController = require("./lib/instances/authenticationController");
 const PORT = 3000;
 const renderController = require("./lib/instances/renderController");
+const typeDefs = require("./schema");
+const resolvers = require("./resolvers");
 
-import typeDefs from "./schema";
-import resolvers from "./resolvers";
 const app = express();
 const schema = makeExecutableSchema({
 	typeDefs,
