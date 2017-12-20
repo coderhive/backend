@@ -42,7 +42,6 @@
 		"mock-knex": "^0.4.0",
 		"moment": "^2.19.3",
 		"pg": "^7.4.0",
-		"phantomjs": "^2.1.7",
 		"supertest": "^3.0.0",
 		"webshot": "^0.18.0"
 	},
