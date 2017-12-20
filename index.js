@@ -6,7 +6,7 @@ const cors = require("cors");
 const { JWT_KEY } = require("./env");
 const jwt = require("express-jwt");
 const authenticationController = require("./lib/instances/authenticationController");
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const renderController = require("./lib/instances/renderController");
 const typeDefs = require("./schema");
 const resolvers = require("./resolvers");
@@ -18,18 +18,8 @@ const schema = makeExecutableSchema({
 });
 
 app.use(bodyParser.json());
-
 app.use(cors());
-app.options("/*", function(req, res, next) {
-	res.header("Access-Control-Allow-Origin", "*");
-	res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS");
-	res.header(
-		"Access-Control-Allow-Headers",
-		"Content-Type, Authorization, Content-Length, X-Requested-With"
-	);
-	res.send(200);
-});
-app.enable("trust proxy");
+
 app.use(
 	jwt({
 		secret: JWT_KEY,
