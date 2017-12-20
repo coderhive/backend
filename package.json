@@ -42,9 +42,7 @@
 		"mock-knex": "^0.4.0",
 		"moment": "^2.19.3",
 		"pg": "^7.4.0",
-		"supertest": "^3.0.0",
-		"webshot": "^0.18.0",
-		"wkhtmltoimage": "^0.1.5"
+		"supertest": "^3.0.0"
 	},
 	"devDependencies": {
 		"eslint": "^4.12.0",
