@@ -17,9 +17,9 @@ const schema = makeExecutableSchema({
 	resolvers
 });
 
-app.options("*", cors());
 app.use(bodyParser.json());
 
+app.use(cors());
 app.use(
 	jwt({
 		secret: JWT_KEY,
