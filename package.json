@@ -43,13 +43,13 @@
 		"moment": "^2.19.3",
 		"pg": "^7.4.0",
 		"supertest": "^3.0.0",
-		"webshot": "^0.18.0"
+		"webshot": "^0.18.0",
+		"wkhtmltoimage": "^0.1.5"
 	},
 	"devDependencies": {
 		"eslint": "^4.12.0",
 		"eslint-plugin-react": "^7.5.1",
-		"nodemon": "^1.12.1",
-		"phantomjs-prebuilt": "^2.1.16"
+		"nodemon": "^1.12.1"
 	},
 	"engines": {
 		"node": "8.4.0"
